@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    outline: none;
+    border: none;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+}
+input{
+    height: 50px;
+    width: 400px;
+    padding: 5px 10px;
+    background-color: aquamarine;
+    border: none;
+    outline: none;
+}
+input:invalid{
+    background-color: red;
+    border-color: red;
+    animation: shake 0.5s infinite ;
+}
+input:valid{
+    
+    border-color: green;
+}
+
+@keyframes shake {
+    0%{
+        transform: translate(4px);
+    }
+    50%{
+        transform: translate(-4px);
+    }
+    100%{
+    transform: translate(4px);
+    }
+    
+}
